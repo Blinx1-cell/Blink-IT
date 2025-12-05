@@ -1,0 +1,214 @@
+html{background-color:rgb(226, 226, 226);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding-left: 2rem;
+padding-right: 2rem;}
+.date{position: relative;
+display: flex;
+flex-direction: row;
+justify-items: baseline;
+justify-content: space-between;}
+.tues {position: relative;
+display: flex;
+justify-items: baseline;}
+.thick1 ,.slim1{width: 100%;}
+.the{position: relative;
+    display: flex;
+justify-content: baseline;}
+.menu{margin-right: auto;}
+.menu a{text-decoration: none;
+    white-space: nowrap;
+color: black;}
+.thenews{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.cloud img{height: 70%;
+margin-top: 0.2rem;
+margin-left: 1rem;}
+.arrow img{margin-top: 0.2rem;
+margin-left: 1rem;}
+.weblogo{margin-top: 0.2rem;}
+
+
+/*nav area*/
+.nav{position: relative;
+display: flex;
+flex-direction: row;
+ justify-content: center;
+
+}
+.nv{ margin-top: 2rem;}
+ .nav span a{text-decoration: none;
+color: black;
+margin-left: 3rem;
+position: relative;
+display:flex;
+overflow: hidden;}
+.nav span a::before{
+    content:" ";
+    position:absolute;
+    bottom: 0px;
+    padding-top: 3px;
+    left: 0;
+    height: 2px;
+    background: green;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform  0.5s ease;
+}
+
+.nav span a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    background: greenyellow;
+
+}
+
+
+
+.nav span a:active{color: red;}
+.world{position: relative;
+margin-top: 9rem;}
+.world img{width: 100%;}
+/*three box roll*/
+.nroll{position: relative;
+display: flex;
+margin-top: 3rem;
+justify-content: space-between;}
+
+.g{position: relative;
+display: flex;
+flex-direction: row;
+ 
+font-size: smaller;}
+.g span img,.g .sep{margin-left: 0.5rem;}
+.g span img{position: relative;
+    display: flex;
+ margin-top: 1.1rem;}
+ 
+.un{position: relative;
+ display: flex;
+line-height: 2rem;
+font-size: large;
+ }
+ .t1{position: relative;
+line-height: 2rem;}
+
+/*second box*/
+.g2{position: relative;
+display: flex;
+flex-direction: row;
+ 
+font-size: smaller;}
+.g2 span img,.g2 .sep2{margin-left: 0.5rem;}
+.g2 span img{position: relative;
+ display: flex;
+ margin-top: 1.1rem;}
+ 
+.glo{position: relative;
+ display: flex;
+line-height: 2rem;
+font-size: large;
+ }
+ .t2{position: relative;
+line-height: 2rem;}
+
+/*third box*/
+.g3{position: relative;
+display: flex;
+flex-direction: row;
+ 
+font-size: smaller;}
+.g3 span img,.g3 .sep3{margin-left: 0.5rem;}
+.g3 span img{position: relative;
+ display: flex;
+ margin-top: 1.1rem;}
+ 
+.exa{position: relative;
+ display: flex;
+line-height: 2rem;
+font-size: large;
+ }
+ .t3{position: relative;
+line-height: 2rem;}
+
+/*second roll*/
+.nroll2{position: relative;
+display: flex;
+  
+margin-top: 3rem;
+
+ }
+.g4{position: relative;
+display: flex;
+flex-direction: row;
+ 
+font-size: smaller;}
+.g4 span img,.g4 .sep4{margin-left: 0.5rem;}
+.g4 span img{position: relative;
+ display: flex;
+ margin-top: 1.1rem;}
+ 
+.com{position: relative;
+ display: flex;
+line-height: 2rem;
+font-size: large;
+ }
+ .t4{position: relative;
+line-height: 2rem;}
+
+
+/*last box*/
+.g5{position: relative;
+display: flex;
+flex-direction: row;
+ 
+font-size: smaller;}
+.g5 span img,.g5 .sep5{margin-left: 0.5rem;}
+.g5 span img{position: relative;
+ display: flex;
+ margin-top: 1.1rem;}
+ 
+.cel{position: relative;
+ display: flex;
+line-height: 2rem;
+font-size: large;
+ }
+ .t5{position: relative;
+line-height: 2rem;
+margin-left: 5rem;}
+
+/*footer*/
+footer{margin-top: 10rem;}
+.hrline img,.fline img{width: 100%;}
+.fline img{margin-bottom: 1rem;}
+
+.teim{position: relative;
+display:flex;
+align-content: baseline;
+justify-content: space-between;
+margin-top: 1rem;
+}
+.fimg{position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-between;}
+.fimg img{height: 70%;}
+.ftext{position: relative;
+display: flex;
+}
+ 
+.copy{margin-left: 1rem;
+font-size: smaller;}
+
+
+
+
+
+
+
+
+
