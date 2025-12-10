@@ -74,6 +74,27 @@ overflow: hidden;}
 margin-top: 9rem;}
 .world img{width: 100%;}
 /*three box roll*/
+
+@media only screen  and (max-width:650px){
+ .nroll,.nroll2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+ }
+ .t1 img,.t2 img,.t3 img,.t4 img,.t5 img{
+    position: relative;
+    width: 70%;
+ }
+ .g,.g1,.g2,.g3,.g4,.g5{
+    position: relative;
+    size: 30%;
+    width: 30%;
+ }
+ .t1,.t2,.t3,.t4,.t5{
+    display: flex;
+ }
+}
 .nroll{position: relative;
 display: flex;
 margin-top: 3rem;

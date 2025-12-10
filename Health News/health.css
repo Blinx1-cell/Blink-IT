@@ -76,9 +76,13 @@ margin-top: 9rem;}
 .world img{width: 100%;}
 /*three box roll*/
 .nroll{position: relative;
-display: flex;
+display: grid;
 margin-top: 3rem;
-justify-content: space-between;}
+grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+gap:2rem;
+grid-column: 1/2;
+
+}
 
 .g{position: relative;
 display: flex;
@@ -101,6 +105,11 @@ font-size: large;
     max-width: 100%;
 
 
+}
+
+.t1 img,.t2 img,.t3 img{
+    width:100%;
+    position:relative;
 }
  
 
@@ -176,3 +185,16 @@ display: flex;
  
 .copy{margin-left: 1rem;
 font-size: smaller;}
+
+@media only screen and (max-width:650px){
+
+.nroll{position: relative;
+display: grid;
+margin-top: 3rem;
+grid-template-columns: 100% ;
+grid-column: 1/2;
+width: 100%;
+
+}
+    
+}
