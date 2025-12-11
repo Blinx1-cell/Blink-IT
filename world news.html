@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Blink-IT</title>
     <link href="world news.css" rel="stylesheet">
 </head>
 <body>
-    <section style="position:relative;">
+    <section >
+       
       <img class="slim1" src="./assets/images/hr line.png">
-      <div style="position:fixed;" class="date">
+      <div class="date">
        <div class="tues">
             <span class="weblogo"  > <img src="./assets/images/web logo.png" alt="web logo"></span>
-            <span>Tuesday, October 29, 2024</span>
+            <span class="  hidden md:flex">Tuesday, October 29, 2024</span>
+            <span class="md:max-2xl:hidden">29/10/2024</span>
         </div>
-        <div class="the">
-                <span class="menu"><a href="">The Menu</a></span>
-                <span class="arrow"  ><a href=""><img src="./assets/images/arrow r.png"></a></span>
-                <span class="cloud"  ><a href=""><img src="./assets/images/cloud.png"></a></span>
+        <div class="the ">
+              <span class="menu"><a href="">The Menu</a></span>
+              <span class="arrow"  ><a href=""><img src="./assets/images/arrow r.png"></a></span>
+              <span class="cloud"  ><a href=""><img src="./assets/images/cloud.png"></a></span>
 
         </div>
       </div>
       <img class="thick1" src="./assets/images/hr line thick.png">
-   
-    <span  class="thenews">
+    
+    <span  class=" flex relative justify-start w-48 mt-7 lg:justify-center lg:w-full">
     <img src="./assets/images/head.png">
     </span>
 
     <!--nav section after "the news"-->
     <section class="nv"> 
 <img class="slim1" src="./assets/images/hr line.png">
-      <nav class="nav ">
+      <nav class="nav hidden md:flex">
         
             <span><a href="./world news.html">World News</a></span>  
              <span><a href="./politics/politics.html">Politics</a></span> 
@@ -42,54 +45,70 @@
              <span><a href="">Podcast</a></span> 
         
       </nav>   
+            <div class="flex md:hidden ">
+       <details class=" relative inline-block text-left">
+            
+        <div class="absolute mt-2 w-48 bg-white border rounded shadow-lg">
+             <a href="./world news.html" class="block px-4 py-2 bg-gray-300 hover:bg-white">World News</a>   
+              <a href="./politics/politics.html"class="block px-4 py-2  bg-gray-300 hover:bg-white ">Politics</a>  
+              <a href="./Buisness/buisness.html"class="block px-4 py-2   bg-gray-300 hover:bg-white">Buisness</a> 
+             <a href="./Technology/technology.html"class="block px-4 py-2   bg-gray-300 hover:bg-white">Technology</a> 
+             <a href="./Health News/health.html"class="block px-4 py-2    bg-gray-300 hover:bg-white">Health</a>  
+             <a href=""class="flex px-4 py-2 hover:block bg-gray-300 hover:bg-white">Sports</a> 
+            <a href=""class="flex px-4 py-2 hover:block bg-gray-300 hover:bg-white">Culture</a>   
+              <a href=""class="flex px-4 py-2 hover:block bg-gray-300 hover:bg-white">Podcast</a> 
+        </div> 
+        </details>
+      </div>  
+
       <img class="thick1" src="./assets/images/hr line thick.png">
     </section>
     <div class="world">
     <h2>WORLD NEWS</h2>
-    <img src="./assets/images/hr line.png">
+    <img src="./assets/images/hr line.png" >
     </div>
-    <section class="nroll">
-        <div class="t1">
-            <img src="./assets/images/understand.png"  ><div class="un">Understanding the socialmovements
+    <section class=" grid   gap-5 pt-10 grid-cols-1 sm:max-lg:grid-cols-2 lg:grid-cols-2 xl:max-2xl:grid-cols-3">
+        <div class="">
+            <img src="./assets/images/understand.png" class="w-full"  ><span><div class="un">Understanding the socialmovements
                 <br> reshaping ourworld today</div>
-                <div class="g"><span>Guy Hawkins</span><span><img src="./assets/images/Horizontal Divider.png" alt=""></span>
+                <div class=" g "><span>Guy Hawkins</span><span><img src="./assets/images/Horizontal Divider.png" alt=""></span>
                 <span class="sep">Sep 9, 2024</span></div>
+                </span>
 
         </div>
-        <div class="t2">
-             <img src="./assets/images/global.png"  ><div class="glo">The global financial landscape and its
+        <div class="">
+             <img src="./assets/images/global.png" class="w-full"   ><div class="glo">The global financial landscape and its
                 <br> implications for all</div>
                 <div class="g2"><span>Guy Hawkins</span><span><img src="./assets/images/Horizontal Divider.png" alt=""></span>
                 <span class="sep2">Sep 9, 2024</span></div>
 
         </div>
-        <div class="t3">
-             <img src="./assets/images/exam.png"  ><div class="exa">Examining the challenges and<BR> responses of nations</div>
+        <div class="">
+             <img src="./assets/images/exam.png" class="w-full"    ><div class="exa">Examining the challenges and<BR> responses of nations</div>
                 <div class="g3"><span>Guy Hawkins</span><span><img src="./assets/images/Horizontal Divider.png" alt=""></span>
                 <span class="sep3">Sep 9, 2024</span></div>
 
         </div>
 
-    </section>
+    
 
-    <div class="nroll2">
-        <span>
-            <div class="t4"> 
-             <img src="./assets/images/com.png"  ><div class="com">A comprehensive analysis of the state
+     
+     
+            <div class=""> 
+             <img src="./assets/images/com.png" class="w-full"   ><div class="com">A comprehensive analysis of the state
                 <br> of global affairs</div>
                 <div class="g4"><span>Guy Hawkins</span><span><img src="./assets/images/Horizontal Divider.png" alt=""></span>
                 <span class="sep4">Sep 9, 2024</span></div>
             </div>
-       </span>
-       <span>
+        
 
-                 <div class="t5">
-             <img src="./assets/images/cel.png"  ><div class="cel">Celebrating diversity and shared<br> human experience</div>
+                 <div class="">
+             <img src="./assets/images/cel.png" class="w-full"    ><div class="cel">Celebrating diversity and shared<br> human experience</div>
                 <div class="g5"><span>Guy Hawkins</span><span><img src="./assets/images/Horizontal Divider.png" alt=""></span>
                 <span class="sep5">Sep 9, 2024</span></div>
                  </div>
-       </span>
-    </div> 
+        
+  </section>
     
     <footer >
 <span class="fline"><img src="./assets/images/foot tline.png"></span>
@@ -114,7 +133,34 @@
     </footer>
 
 
-     
+     <div class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl">
+  <div class="md:flex">
+    <div class="md:shrink-0">
+      <img
+        class="h-48 w-full object-cover md:h-full md:w-48"
+        src="./assets/images/exam.png"
+        alt="Modern building architecture"
+      />
+    </div>
+    <div class="p-8">
+      <div class="text-sm bg-black/70 font-semibold tracking-wide text-white px-4  uppercase">Company retreats</div>
+      <a href="#" class="mt-1 block text-lg leading-tight font-medium text-black hover:underline">
+        Incredible accommodation for your team
+      </a>
+      <p class="mt-2 text-gray-500">
+        Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of
+        places to do just that.
+      </p>
+      <button disabled class="p-2 disabled:bg-gray-500 disabled:cursor-not-allowed text-sm md:text-md hover:text-white active:scale-105 transition-all focus:rounded-full focus:outline-2  focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 relative top-4 rounded-full bg-sky-400 hover:bg-sky-500">
+        save changes 
+      </button>
+
+      <input type="checkbox" class="mt-[1rem] h-4 w-4 bg-ease-fluid has-checked:bg-red-500 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+
+
+    </div>
+  </div>
+</div>
      </section>
 </body>
 </html>

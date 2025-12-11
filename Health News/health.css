@@ -198,3 +198,6 @@ width: 100%;
 }
     
 }
+input[type="text"]{
+    background-color: blueviolet;
+}
