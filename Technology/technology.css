@@ -190,7 +190,7 @@ margin-left: 5rem;}
 /*footer*/
 footer{margin-top: 10rem;}
 .hrline img,.fline img{width: 100%;}
-.fline img{margin-bottom: 1rem;}
+.fline img{margin-bottom: 1rem; }
 
 .teim{position: relative;
 display:flex;
