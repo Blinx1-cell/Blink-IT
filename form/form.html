@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="bg-gray-200 p-4 rounded-xl ">
+       <legend class="flex relative justify-center mb-7"> Please fill form to recive updates.</legend>
+       <form class=" flex flex-col p-4 rounded-xl bg-blue-400  relative justify-center ">
+           <label >
+            <B>  NAME:</B><br>
+            <input type="text" placeholder="NAME" class="rounded-xl  focus:outline-2 focus:outline-offset-2 p-4">
+            
+           </label> <br>
+           
+            <label >
+            <B>  TEL:</B><br>
+            <input type="TEL" class="focus:outline-2 focus:outline-offset-2 p-4">
+           </label><br>
+
+            <label>
+            <B>  EMAIL:</B><br>
+            <input type="email" class="peer focus:outline-2 focus:outline-offset-2 focus outline-violet-500
+            invalid:outline-pink-400 rounded-xl p-4">
+            <p class="invisible peer-invalid:visible">please input valid email</p>
+           </label><br>
+
+           <label>
+            <b>PASSWORD:</b><br>
+                <input type="password" class="rounded-xl peer focus:outline-2 focus:outline-pink-400 focus:outline-offset-2 p-4 ">
+                <p class="invisible peer-focus:visible">password must be  at least six digits</p>
+           </label>
+           
+
+
+       </form>
+    </div>
+    
+</body>
+</html>

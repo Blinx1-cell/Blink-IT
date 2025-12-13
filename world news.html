@@ -33,22 +33,23 @@
     <!--nav section after "the news"-->
     <section class="nv"> 
 <img class="slim1" src="./assets/images/hr line.png">
-      <nav class="nav hidden md:flex">
+      <nav class="nav hidden sm:flex    xl:font-medium ">
         
-            <span><a href="./world news.html">World News</a></span>  
-             <span><a href="./politics/politics.html">Politics</a></span> 
-             <span><a href="./Buisness/buisness.html">Buisness</a></span> 
-             <span><a href="./Technology/technology.html">Technology</a></span> 
-             <span><a href="./Health News/health.html">Health</a></span> 
-             <span><a href="">Sports</a></span>
-             <span><a href="">Culture</a></span>  
-             <span><a href="">Podcast</a></span> 
+            <span><a href="./world news.html" class=" xl:pl-4"  >World News</a></span>  
+             <span><a href="./politics/politics.html" class=" xl:pl-4">Politics</a></span> 
+             <span><a href="./Buisness/buisness.html"class=" xl:pl-4 "  >Buisness</a></span> 
+             <span><a href="./Technology/technology.html"class=" xl:pl-4" >Technology</a></span> 
+             <span><a href="./Health News/health.html"  class=" xl:pl-4 ">Health</a></span> 
+             <span><a href=""  class=" xl:pl-4">Sports</a></span>
+             <span><a href="" class=" xl:pl-4 ">Culture</a></span>  
+             <span ><a href=""  class=" xl:pl-4 "  >Podcast</a></span> 
         
-      </nav>   
-            <div class="flex md:hidden ">
-       <details class=" relative inline-block text-left">
+      </nav> 
+ 
+            <div class="flex sm:hidden relative ">
+       <details  class=" relative flex flex-row text-left"><summary>pages</summary>
             
-        <div class="absolute mt-2 w-48 bg-white border rounded shadow-lg">
+        <div class="absolute mt-2 w-48 bg-white border rounded shadow-lg  ">
              <a href="./world news.html" class="block px-4 py-2 bg-gray-300 hover:bg-white">World News</a>   
               <a href="./politics/politics.html"class="block px-4 py-2  bg-gray-300 hover:bg-white ">Politics</a>  
               <a href="./Buisness/buisness.html"class="block px-4 py-2   bg-gray-300 hover:bg-white">Buisness</a> 
@@ -59,9 +60,9 @@
               <a href=""class="flex px-4 py-2 hover:block bg-gray-300 hover:bg-white">Podcast</a> 
         </div> 
         </details>
-      </div>  
-
-      <img class="thick1" src="./assets/images/hr line thick.png">
+      </div>
+    
+      <img class="thick1 inline-block" src="./assets/images/hr line thick.png">
     </section>
     <div class="world">
     <h2>WORLD NEWS</h2>
@@ -85,7 +86,7 @@
         </div>
         <div class="">
              <img src="./assets/images/exam.png" class="w-full"    ><div class="exa">Examining the challenges and<BR> responses of nations</div>
-                <div class="g3"><span>Guy Hawkins</span><span><img src="./assets/images/Horizontal Divider.png" alt=""></span>
+                <div class="g3"><span>Guy Hawkins</span><span><img  src="./assets/images/Horizontal Divider.png" alt="" ></span>
                 <span class="sep3">Sep 9, 2024</span></div>
 
         </div>
@@ -151,8 +152,8 @@
         Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of
         places to do just that.
       </p>
-      <button disabled class="p-2 disabled:bg-gray-500 disabled:cursor-not-allowed text-sm md:text-md hover:text-white active:scale-105 transition-all focus:rounded-full focus:outline-2  focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 relative top-4 rounded-full bg-sky-400 hover:bg-sky-500">
-        save changes 
+      <button   class="p-2 disabled:bg-gray-500 disabled:cursor-not-allowed text-sm md:text-md hover:text-white active:scale-105 transition-all focus:rounded-full focus:outline-2  focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 relative top-4 rounded-full bg-sky-400 hover:bg-sky-500">
+       <a href="./form/form.html"  class="outline-none text">create an account</a>
       </button>
 
       <input type="checkbox" class="mt-[1rem] h-4 w-4 bg-ease-fluid has-checked:bg-red-500 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
@@ -161,6 +162,48 @@
     </div>
   </div>
 </div>
+
      </section>
+     <fieldset>
+  <legend>Published status</legend>
+  <input id="draft" class="peer/draft" type="radio" name="status" checked />
+  <label for="draft" class="peer-checked/draft:text-sky-500">Draft</label>
+  <input id="published" class="peer/published" type="radio" name="status" />
+  <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+  <div class="hidden peer-checked/draft:block">Drafts are only visible to administrators.</div>
+  <div class="hidden peer-checked/published:block">Your post will be publicly visible on your site.</div>
+</fieldset>
+  <form>
+  <label class="block">
+    <span class="...">Email</span>
+    <input type="email" class="peer ..." />
+    <p class="invisible peer-invalid:visible ...">Please provide a valid email address.</p>
+  </label>
+</form>
+
+<ul role="list">
+  {#each people as person}
+    <li class="group/item ...">
+      <!-- ... -->
+      <a class="group/edit invisible group-hover/item:visible ..." href="tel:{person.phone}">
+        <span class="group-hover/edit:text-gray-700 ...">Call</span>
+        <svg class="group-hover/edit:translate-x-0.5 group-hover/edit:text-gray-500 ..."><!-- ... --></svg>
+      </a>
+    </li>
+  <li class="group/item ...">
+      <!-- ... -->
+      <a class="group/edit invisible group-hover/item:visible ..." href="tel:{person.phone}">
+        <span class="group-hover/edit:text-gray-700 ...">Call</span>
+        <svg class="group-hover/edit:translate-x-0.5 group-hover/edit:text-gray-500 ..."><!-- ... --></svg>
+      </a>
+    </li>
+    <li class="group/item ...">
+      <!-- ... -->
+      <a class="group/edit invisible group-hover/item:visible ..." href="tel:{person.phone}">
+        <span class="group-hover/edit:text-gray-700 ...">Call</span>
+        <svg class="group-hover/edit:translate-x-0.5 group-hover/edit:text-gray-500 ..."><!-- ... --></svg>
+      </a>
+    </li>
+</ul>
 </body>
 </html>

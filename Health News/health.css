@@ -2,6 +2,9 @@ html{background-color:rgb(226, 226, 226);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-left: 2rem;
 padding-right: 2rem;}
+ 
+
+ 
 .date{position: relative;
 display: flex;
 flex-direction: row;
@@ -10,10 +13,11 @@ justify-content: space-between;}
 .tues {position: relative;
 display: flex;
 justify-items: baseline;}
-.thick1 ,.slim1{width: 100%;}
+.thick1 ,.slim1{width: 100%;
+position: relative;}
 .the{position: relative;
     display: flex;
-justify-content: baseline;}
+align-items: baseline;}
 .menu{margin-right: auto;}
 .menu a{text-decoration: none;
     white-space: nowrap;
@@ -37,17 +41,19 @@ margin-left: 1rem;}
 display: flex;
 flex-direction: row;
  justify-content: center;
-
+ flex-wrap: wrap;
+ gap: 1rem;
+ width: 100%;
 }
-.nv{ margin-top: 2rem;}
+.nv{ margin-top: 2rem; display: block !important;}
  .nav span a{text-decoration: none;
 color: black;
-margin-left: 3rem;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
 position: relative;
-display:flex;
+display: inline-block;
 overflow: hidden;
-
-}
+font-size: 0.9rem;}
 
 .nav span a::before{
     content:" ";
@@ -70,19 +76,17 @@ overflow: hidden;
 
 }
 
+
+
 .nav span a:active{color: red;}
-.world{position: relative;
+.world{ 
 margin-top: 9rem;}
 .world img{width: 100%;}
 /*three box roll*/
 .nroll{position: relative;
-display: grid;
+display: flex;
 margin-top: 3rem;
-grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-gap:2rem;
-grid-column: 1/2;
-
-}
+justify-content: space-between;}
 
 .g{position: relative;
 display: flex;
@@ -99,29 +103,8 @@ font-size: smaller;}
 line-height: 2rem;
 font-size: large;
  }
- .t1{
-    position:  relative;
-    line-height: 2rem;
-    max-width: 100%;
-
-
-}
-
-.t1 img,.t2 img,.t3 img{
-    width:100%;
-    position:relative;
-}
- 
-
-.t1 p{
-    position:absolute;
-    top:50px;
-    color: black;
-    left: 10px;
-    font-size: 2rem;
-    line-height: 3lh;
-
-}
+ .t1{position: relative;
+line-height: 2rem;}
 
 
 /*second box*/
@@ -161,9 +144,54 @@ font-size: large;
  }
  .t3{position: relative;
 line-height: 2rem;}
- 
 
-/*footer*/
+/*second roll*/
+.nroll2{position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 3rem;
+}
+.nroll2 > span {
+flex: 0 0 calc(33.333% - 1rem);
+}
+.g4{position: relative;
+display: flex;
+flex-direction: row;
+ 
+font-size: smaller;}
+.g4 span img,.g4 .sep4{margin-left: 0.5rem;}
+.g4 span img{position: relative;
+ display: flex;
+ margin-top: 1.1rem;}
+ 
+.com{position: relative;
+ display: flex;
+line-height: 2rem;
+font-size: large;
+ }
+ .t4{position: relative;
+line-height: 2rem;}
+
+
+/*last box*/
+.g5{position: relative;
+display: flex;
+flex-direction: row;
+ 
+font-size: smaller;}
+.g5 span img,.g5 .sep5{margin-left: 0.5rem;}
+.g5 span img{position: relative;
+ display: flex;
+ margin-top: 1.1rem;}
+ 
+.cel{position: relative;
+ display: flex;
+line-height: 2rem;
+font-size: large;
+ }
+ .t5{position: relative;
+line-height: 2rem;}
 footer{margin-top: 10rem;}
 .hrline img,.fline img{width: 100%;}
 .fline img{margin-bottom: 1rem;}
@@ -186,18 +214,5 @@ display: flex;
 .copy{margin-left: 1rem;
 font-size: smaller;}
 
-@media only screen and (max-width:650px){
 
-.nroll{position: relative;
-display: grid;
-margin-top: 3rem;
-grid-template-columns: 100% ;
-grid-column: 1/2;
-width: 100%;
 
-}
-    
-}
-input[type="text"]{
-    background-color: blueviolet;
-}

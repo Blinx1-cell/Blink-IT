@@ -10,7 +10,8 @@ justify-content: space-between;}
 .tues {position: relative;
 display: flex;
 justify-items: baseline;}
-.thick1 ,.slim1{width: 100%;}
+.thick1 ,.slim1{width: 100%;
+position: relative;}
 .the{position: relative;
     display: flex;
 justify-content: baseline;}
@@ -37,15 +38,19 @@ margin-left: 1rem;}
 display: flex;
 flex-direction: row;
  justify-content: center;
-
+ flex-wrap: wrap;
+ gap: 1rem;
+ width: 100%;
 }
-.nv{ margin-top: 2rem;}
-  .nav span a{text-decoration: none;
+.nv{ margin-top: 2rem; display: block !important;}
+ .nav span a{text-decoration: none;
 color: black;
-margin-left: 3rem;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
 position: relative;
-display:flex;
-overflow: hidden;}
+display: inline-block;
+overflow: hidden;
+font-size: 0.9rem;}
 .nav span a::before{
     content:" ";
     position:absolute;
@@ -71,7 +76,7 @@ overflow: hidden;}
 
 
 .nav span a:active{color: red;}
-.world{position: relative;
+.world{ 
 margin-top: 9rem;}
 .world img{width: 100%;}
 /*three box roll*/
